@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+.bg-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.small-screen {
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto;
+}
+
+.large-screen {
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto;
+}
+
+.icon {
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
+}
+
+.heading {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: Roboto;
+    align-self: flex-start;
+    padding-right: 15px;
+    font-size: 45px;
+    font-weight: 400;
+}
+
+.one {
+    border-top: 0.6px solid rgb(35, 34, 41);
+    border-bottom: 0.6px solid rgb(35, 34, 41);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    margin-bottom: 2px;
+}
+
+.two {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    border-bottom: 0.6px solid rgb(35, 34, 41);
+    margin-top: 20px;
+}
+
+.back {
+    width: 260px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.latest-edition,
+.shirts,
+.hoodies {
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1 {
+    color: white;
+    font-family: Roboto;
+    background-color: black;
+    box-shadow: 6px 6px 0px 0px rgb(254, 106, 58);
+    background: rgb(35, 34, 41);
+    padding: 15px;
+    width: 180px;
+    border-width: 0px;
+    margin-right: 20px;
+}
+
+.btn2 {
+    font-family: Roboto;
+    background-color: black;
+    box-sizing: border-box;
+    background: rgb(255, 251, 247);
+    padding: 15px;
+    width: 180px;
+    border-width: 0px;
+    color: black;
+    border: 2px solid black;
+}
+
+.quote {
+    font-family: Roboto;
+    width: 200px;
+    align-self: center;
+    font-size: 25px;
+    margin: 30px;
+}
+
+.span {
+    color: skyblue;
+}
+
+.scroll {
+    border-radius: 6.83px;
+
+    background: rgb(251, 200, 0);
+    align-self: center;
+    padding: 20px;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    border-width: 0px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.container2 {
+    width: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.shirts-container {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.h-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    background: url(vimeo-search-input);
+    height: 60px;
+    width: 390px;
+    border: 2px solid skyblue;
+    border-radius: 7px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-icon {
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.search {
+    background: none;
+    border: none;
+    height: 60px;
+    width: 350px;
+    font-size: 20px;
+    font-family: Roboto;
+    padding-left: 12px;
+    outline: none;
+}
+
+.nav-open {
+    display: none;
+    font-family: Roboto;
+}
+
+@media(max-width: 768px) {
+    .large-screen {
+        display: none;
+        flex-direction: row;
+    }
+
+    .small-screen {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .large {
+        display: none;
+    }
+
+    .small {
+        display: flex;
+    }
+
+    .input {
+        display: none;
+    }
+}
+
+@media(min-width: 769px) {
+    .large-screen {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .small-screen {
+        display: none;
+        flex-direction: row;
+    }
+
+    .heading {
+        font-size: 60px;
+
+    }
+
+    .buttons {
+        align-self: flex-start;
+        order: 0;
+    }
+
+    .large {
+        display: flex;
+    }
+
+    .small {
+        display: none;
+    }
+
+    .container3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    .quote {
+        font-size: 30px;
+    }
+
+    .back {
+        width: 300px;
+    }
+
+    .input {
+        display: flex;
+    }
+}
